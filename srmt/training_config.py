@@ -133,7 +133,7 @@ class Experiment(BaseModel):
     experiment: str = 'exp'
     train_dir: str = 'experiments/train_dir'
     seed: Optional[int] = 42
-    use_wandb: bool = True
+    use_wandb: bool = False
 
     env: Literal['PogemaMazes-v0', 'PogemaBtlnck-v0', "PogemaRandom-v0"] = "PogemaMazes-v0"
 
