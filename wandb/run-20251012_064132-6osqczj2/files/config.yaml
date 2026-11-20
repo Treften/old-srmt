@@ -1,0 +1,230 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.4
+    framework: huggingface
+    huggingface_version: 4.43.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.14
+    start_time: 1760251292.245724
+    t:
+      1:
+      - 1
+      - 11
+      - 49
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      - 35
+      4: 3.10.14
+      5: 0.13.4
+      6: 4.43.3
+      8:
+      - 5
+action_hist:
+  desc: null
+  value: false
+actor_critic_share_weights:
+  desc: null
+  value: true
+async_rl:
+  desc: null
+  value: false
+attn_core:
+  desc: null
+  value: true
+batch_size:
+  desc: null
+  value: 256
+clear_memory:
+  desc: null
+  value: false
+core:
+  desc: null
+  value:
+    add_cross_attention: true
+    core_hidden_size: 16
+    max_position_embeddings: 16384
+    mem: true
+    num_attention_heads: 4
+core_memory:
+  desc: null
+  value: true
+decoder_mlp_layers:
+  desc: null
+  value: []
+encoder:
+  desc: null
+  value:
+    activation_func: ReLU
+    extra_fc_layers: 1
+    hidden_size: 16
+    num_filters: 8
+    num_res_blocks: 1
+env:
+  desc: null
+  value: PogemaBtlnck-v0
+environment:
+  desc: null
+  value:
+    agent_bins: null
+    env: PogemaBtlnck-v0
+    env_id: null
+    every_step_metrics: false
+    grid_config:
+      FREE: 0
+      MOVES:
+      - - 0
+        - 0
+      - - -1
+        - 0
+      - - 1
+        - 0
+      - - 0
+        - -1
+      - - 0
+        - 1
+      OBSTACLE: 1
+      agents_xy: null
+      auto_reset: false
+      collision_system: block_both
+      density: 0.3
+      empty_outside: true
+      integration: SampleFactory
+      map: null
+      map_name: bottlenecks9-v-train-330-.+
+      max_episode_steps: 512
+      non_random_possible_targets: false
+      num_agents: 2
+      obs_radius: 2
+      observation_type: POMAPF
+      on_target: finish
+      persistent: false
+      possible_agents_xy: null
+      possible_targets_xy: null
+      seed: null
+      size: 8
+      targets_xy: null
+    target_num_agents: null
+    use_maps: true
+    vector_index: null
+    with_animation: false
+    worker_index: null
+experiment:
+  desc: null
+  value: nak64
+exploration_loss_coeff:
+  desc: null
+  value: 0.0156
+force_envs_single_thread:
+  desc: null
+  value: true
+gamma:
+  desc: null
+  value: 0.9716
+keep_checkpoints:
+  desc: null
+  value: 1000000
+learning_rate:
+  desc: null
+  value: 0.00013
+lr_schedule:
+  desc: null
+  value: kl_adaptive_minibatch
+max_policy_lag:
+  desc: null
+  value: 1
+normalize_input:
+  desc: null
+  value: false
+normalize_returns:
+  desc: null
+  value: false
+num_batches_per_epoch:
+  desc: null
+  value: 16
+num_batches_to_accumulate:
+  desc: null
+  value: 1
+num_envs_per_worker:
+  desc: null
+  value: 4
+num_workers:
+  desc: null
+  value: 4
+optimizer:
+  desc: null
+  value: adam
+ppo_clip_ratio:
+  desc: null
+  value: 0.2
+preprocessing:
+  desc: null
+  value:
+    anontargets: true
+    any_move_reward: false
+    const_reward: false
+    intrinsic_target_reward: 0.005
+    network_input_radius: 2
+    positive_reward: true
+    reset_dynamic_cost: false
+    reversed_reward: false
+    target_reward: true
+    use_dynamic_cost: false
+    use_static_cost: false
+recurrence:
+  desc: null
+  value: 1
+restart_behavior:
+  desc: null
+  value: overwrite
+rnn_size:
+  desc: null
+  value: 256
+rollout:
+  desc: null
+  value: 8
+save_best_metric:
+  desc: null
+  value: CSR
+save_every_sec:
+  desc: null
+  value: 60
+save_milestones_sec:
+  desc: null
+  value: -1
+seed:
+  desc: null
+  value: 42
+serial_mode:
+  desc: null
+  value: false
+stats_avg:
+  desc: null
+  value: 10
+train_dir:
+  desc: null
+  value: experiments/train_dir
+train_for_env_steps:
+  desc: null
+  value: 20000000
+use_global_memory:
+  desc: null
+  value: true
+use_rnn:
+  desc: null
+  value: false
+use_wandb:
+  desc: null
+  value: true
+value_bootstrap:
+  desc: null
+  value: true
+worker_num_splits:
+  desc: null
+  value: 1

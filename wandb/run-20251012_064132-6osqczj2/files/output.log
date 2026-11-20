@@ -1,0 +1,173 @@
+[36m[2025-10-12 06:41:33,561][03866] Experiment dir experiments/train_dir/nak64 already exists!
+[36m[2025-10-12 06:41:33,562][03866] Overwriting the existing experiment dir experiments/train_dir/nak64...
+[36m[2025-10-12 06:41:34,473][03866] Starting training in experiments/train_dir/nak64...
+[36m[2025-10-12 06:41:34,474][03866] Weights and Biases integration disabled
+[36m[2025-10-12 06:41:36,837][03866] Queried available GPUs: 0
+[37m[1m[2025-10-12 06:41:36,837][03866] Environment var CUDA_VISIBLE_DEVICES is 0
+[36m[2025-10-12 06:41:41,001][03866] Starting experiment with the following configuration:
+[36mhelp=False
+[36malgo=APPO
+[36menv=PogemaBtlnck-v0
+[36mexperiment=nak64
+[36mtrain_dir=experiments/train_dir
+[36mrestart_behavior=overwrite
+[36mdevice=gpu
+[36mseed=42
+[36mnum_policies=1
+[36masync_rl=False
+[36mserial_mode=False
+[36mbatched_sampling=False
+[36mnum_batches_to_accumulate=1
+[36mworker_num_splits=1
+[36mpolicy_workers_per_policy=1
+[36mmax_policy_lag=1
+[36mnum_workers=4
+[36mnum_envs_per_worker=4
+[36mbatch_size=256
+[36mnum_batches_per_epoch=16
+[36mnum_epochs=1
+[36mrollout=8
+[36mrecurrence=1
+[36mshuffle_minibatches=False
+[36mgamma=0.9716
+[36mreward_scale=1.0
+[36mreward_clip=1000.0
+[36mvalue_bootstrap=True
+[36mnormalize_returns=False
+[36mexploration_loss_coeff=0.0156
+[36mvalue_loss_coeff=0.5
+[36mkl_loss_coeff=0.0
+[36mexploration_loss=entropy
+[36mgae_lambda=0.95
+[36mppo_clip_ratio=0.2
+[36mppo_clip_value=1.0
+[36mwith_vtrace=False
+[36mvtrace_rho=1.0
+[36mvtrace_c=1.0
+[36moptimizer=adam
+[36madam_eps=1e-06
+[36madam_beta1=0.9
+[36madam_beta2=0.999
+[36mmax_grad_norm=4.0
+[36mlearning_rate=0.00013
+[36mlr_schedule=kl_adaptive_minibatch
+[36mlr_schedule_kl_threshold=0.008
+[36mlr_adaptive_min=1e-06
+[36mlr_adaptive_max=0.01
+[36mobs_subtract_mean=0.0
+[36mobs_scale=1.0
+[36mnormalize_input=False
+[36mnormalize_input_keys=None
+[36mdecorrelate_experience_max_seconds=0
+[36mdecorrelate_envs_on_one_worker=True
+[36mactor_worker_gpus=[]
+[36mset_workers_cpu_affinity=True
+[36mforce_envs_single_thread=True
+[36mdefault_niceness=0
+[36mlog_to_file=True
+[36mexperiment_summaries_interval=10
+[36mflush_summaries_interval=30
+[36mstats_avg=10
+[36msummaries_use_frameskip=True
+[36mheartbeat_interval=20
+[36mheartbeat_reporting_interval=180
+[36mtrain_for_env_steps=20000000
+[36mtrain_for_seconds=10000000000
+[36msave_every_sec=60
+[36mkeep_checkpoints=1000000
+[36mload_checkpoint_kind=latest
+[36msave_milestones_sec=-1
+[36msave_best_every_sec=5
+[36msave_best_metric=CSR
+[36msave_best_after=100000
+[36mbenchmark=False
+[36mencoder_mlp_layers=[512, 512]
+[36mencoder_conv_architecture=convnet_simple
+[36mencoder_conv_mlp_layers=[512]
+[36muse_rnn=False
+[36mrnn_size=256
+[36mrnn_type=gru
+[36mrnn_num_layers=1
+[36mdecoder_mlp_layers=[]
+[36mnonlinearity=elu
+[36mpolicy_initialization=orthogonal
+[36mpolicy_init_gain=1.0
+[36mactor_critic_share_weights=True
+[36madaptive_stddev=True
+[36mcontinuous_tanh_scale=0.0
+[36minitial_stddev=1.0
+[36muse_env_info_cache=False
+[36menv_gpu_actions=False
+[36menv_gpu_observations=True
+[36menv_frameskip=1
+[36menv_framestack=1
+[36mpixel_format=CHW
+[36muse_record_episode_statistics=False
+[36mwith_wandb=False
+[36mwandb_user=None
+[36mwandb_project=sample_factory
+[36mwandb_group=None
+[36mwandb_job_type=SF
+[36mwandb_tags=[]
+[36mwith_pbt=False
+[36mpbt_mix_policies_in_one_env=True
+[36mpbt_period_env_steps=5000000
+[36mpbt_start_mutation=20000000
+[36mpbt_replace_fraction=0.3
+[36mpbt_mutation_rate=0.15
+[36mpbt_replace_reward_gap=0.1
+[36mpbt_replace_reward_gap_absolute=1e-06
+[36mpbt_optimize_gamma=False
+[36mpbt_target_objective=true_objective
+[36mpbt_perturb_min=1.1
+[36mpbt_perturb_max=1.5
+[36menvironment={'grid_config': {'MOVES': [[0, 0], [-1, 0], [1, 0], [0, -1], [0, 1]], 'FREE': 0, 'OBSTACLE': 1, 'empty_outside': True, 'on_target': 'finish', 'seed': None, 'size': 8, 'density': 0.3, 'num_agents': 2, 'obs_radius': 2, 'agents_xy': None, 'targets_xy': None, 'possible_agents_xy': None, 'possible_targets_xy': None, 'collision_system': 'block_both', 'persistent': False, 'non_random_possible_targets': False, 'observation_type': 'POMAPF', 'map': None, 'map_name': 'bottlenecks9-v-train-330-.+', 'integration': 'SampleFactory', 'max_episode_steps': 512, 'auto_reset': False}, 'env': 'PogemaBtlnck-v0', 'with_animation': False, 'worker_index': None, 'vector_index': None, 'env_id': None, 'target_num_agents': None, 'agent_bins': None, 'use_maps': True, 'every_step_metrics': False}
+[36mencoder={'extra_fc_layers': 1, 'num_filters': 8, 'num_res_blocks': 1, 'activation_func': 'ReLU', 'hidden_size': 16}
+[36mcore={'num_attention_heads': 4, 'core_hidden_size': 16, 'mem': True, 'max_position_embeddings': 16384, 'add_cross_attention': True}
+[36mpreprocessing={'use_static_cost': False, 'use_dynamic_cost': False, 'reset_dynamic_cost': False, 'network_input_radius': 2, 'intrinsic_target_reward': 0.005, 'anontargets': True, 'target_reward': True, 'reversed_reward': False, 'const_reward': False, 'positive_reward': True, 'any_move_reward': False}
+[36mattn_core=True
+[36mcore_memory=True
+[36muse_global_memory=True
+[36maction_hist=False
+[36mclear_memory=False
+[36muse_wandb=True
+[36mcommand_line=--env=PogemaBtlnck-v0
+[36mcli_args={'env': 'PogemaBtlnck-v0'}
+[36mgit_hash=unknown
+[36mgit_repo_name=not a git repository
+[36m[2025-10-12 06:41:41,008][03866] Saving configuration to experiments/train_dir/nak64/config.json...
+[36m[2025-10-12 06:41:41,016][03866] Rollout worker 0 uses device cpu
+[36m[2025-10-12 06:41:41,016][03866] Rollout worker 1 uses device cpu
+[36m[2025-10-12 06:41:41,016][03866] Rollout worker 2 uses device cpu
+[36m[2025-10-12 06:41:41,017][03866] Rollout worker 3 uses device cpu
+[36m[2025-10-12 06:41:41,017][03866] In synchronous mode, we only accumulate one batch. Setting num_batches_to_accumulate to 1
+[37m[1m[2025-10-12 06:41:41,017][03866] 241
+[36m[2025-10-12 06:41:41,042][03866] Using GPUs [0] for process 0 (actually maps to GPUs [0])
+[37m[1m[2025-10-12 06:41:41,043][03866] InferenceWorker_p0-w0: min num requests: 1
+[36m[2025-10-12 06:41:41,057][03866] Starting all processes...
+[36m[2025-10-12 06:41:41,058][03866] Starting process learner_proc0
+[36m[2025-10-12 06:41:41,062][03866] Starting all processes...
+[36m[2025-10-12 06:41:41,066][03866] Starting process inference_proc0-0
+[36m[2025-10-12 06:41:41,067][03866] Starting process rollout_proc1
+[36m[2025-10-12 06:41:41,067][03866] Starting process rollout_proc2
+[36m[2025-10-12 06:41:41,067][03866] Starting process rollout_proc3
+[36m[2025-10-12 06:41:41,066][03866] Starting process rollout_proc0
+[37m[1m[2025-10-12 06:42:01,035][03866] Heartbeat connected on Batcher_0
+[37m[1m[2025-10-12 06:42:01,043][03866] Heartbeat connected on InferenceWorker_p0-w0
+[37m[1m[2025-10-12 06:42:01,048][03866] Heartbeat connected on RolloutWorker_w0
+[37m[1m[2025-10-12 06:42:01,052][03866] Heartbeat connected on RolloutWorker_w1
+[37m[1m[2025-10-12 06:42:01,054][03866] Heartbeat connected on RolloutWorker_w2
+[37m[1m[2025-10-12 06:42:01,059][03866] Heartbeat connected on RolloutWorker_w3
+[37m[1m[2025-10-12 06:42:01,382][03866] Heartbeat connected on LearnerWorker_p0
+[36m[2025-10-12 06:42:04,509][03866] Fps is (10 sec: nan, 60 sec: nan, 300 sec: nan). Total num frames: 0. Throughput: 0: nan. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[37m[1m[2025-10-12 06:42:04,777][03866] Inference worker 0-0 is ready!
+[37m[1m[2025-10-12 06:42:04,777][03866] All inference workers are ready! Signal rollout workers to start!
+[36m[2025-10-12 06:42:09,509][03866] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 0.0. Samples: 0. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[36m[2025-10-12 06:42:14,509][03866] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 409.6. Samples: 4096. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[36m[2025-10-12 06:42:19,509][03866] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 273.1. Samples: 4096. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[36m[2025-10-12 06:42:24,509][03866] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 204.8. Samples: 4096. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[36m[2025-10-12 06:42:29,509][03866] Fps is (10 sec: 0.0, 60 sec: 0.0, 300 sec: 0.0). Total num frames: 0. Throughput: 0: 163.8. Samples: 4096. Policy #0 lag: (min: -1.0, avg: -1.0, max: -1.0)
+[37m[1m[2025-10-12 06:42:31,007][03866] Keyboard interrupt detected in the event loop EvtLoop [Runner_EvtLoop, process=main process 3866], exiting...
+[37m[1m[2025-10-12 06:42:31,008][03866] Runner profile tree view:
+[37m[1mmain_loop: 49.9511
+[37m[1m[2025-10-12 06:42:31,021][03866] Collected {0: 0}, FPS: 0.0

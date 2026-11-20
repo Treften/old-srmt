@@ -1,0 +1,24 @@
+{
+    "os": "Linux-6.1.123+-x86_64-with-glibc2.35",
+    "python": "3.10.14",
+    "heartbeatAt": "2025-07-29T12:56:14.874159",
+    "startedAt": "2025-07-29T12:56:14.770855",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [
+        "--experiment=nak64_2",
+        "--attn_core=true",
+        "--use_rnn=false",
+        "--core_memory=true",
+        "--const_reward=true",
+        "--intrinsic_target_reward=0"
+    ],
+    "state": "running",
+    "program": "/content/drive/MyDrive/srmt-main/train.py",
+    "host": "7229f53e9e5f",
+    "username": "root",
+    "executable": "/usr/local/envs/srmt_env/bin/python3.10"
+}
