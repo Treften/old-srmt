@@ -239,7 +239,7 @@ class ExperimentBtlnck(Experiment):
     experiment: str = 'exp_btlnck'
     train_dir: str = 'experiments/train_dir'
     seed: Optional[int] = 42
-    use_wandb: bool = True
+    use_wandb: bool = False
 
     env: Literal['PogemaMazes-v0', 'PogemaBtlnck-v0'] = 'PogemaBtlnck-v0'
 
