@@ -66,6 +66,7 @@ def run(config=None):
         exp.use_wandb = False
 
     if exp.use_wandb:
+        print("Using wandb")
         wandb_run_name = exp.experiment
         import os
         if params.wandb_thread_mode:
